@@ -33,7 +33,7 @@ function PlanCard({ plan }: PlanCardProps) {
     } = plan;
 
     return (
-        <div className={`w-64 h-128 rounded-xl p-6 bg-white/5 relative ${containerStyle}`}>
+        <div className={`w-80 h-128 rounded-xl p-6 bg-white/5 relative ${containerStyle}`}>
             {isPopular && (
                 <span className="bg-red-500 absolute -top-3 flex left-1/2 px-4 font-bold py-2 text-xs rounded-2xl -translate-x-1/2">
                     MÁS POPULAR

@@ -3,9 +3,9 @@ import { useLocation, Link } from "react-router-dom";
 function Navbar(){
     const location = useLocation();
     return(
-        <header className="w-full h-32 flex justify-around items-center">
+        <header className="w-full h-28 flex flex-wrap p-8 justify-around items-center">
             <img className="w-48 drop-shadow-[0_0_12px_rgba(255,0,0,0.9)]" src="../../img/MJCinema-SinFondo.png" />
-            <nav className="flex gap-8 text-gray-300 font-medium">
+            <nav className="gap-8 hidden lg:flex text-gray-300 font-medium">
                 <Link
                     className={`${location.pathname === "/"? "text-red-400 border-b pb-1" : "text-gray-300"}`} 
                     to={"/"}
@@ -31,12 +31,16 @@ function Navbar(){
                     Mi Lista
                 </Link>
             </nav>
-            <div className="flex gap-4 items-center justify-center">
+            <div className="hidden md:flex gap-4 items-center justify-center">
                 <button className="text-2xl text-gray-300 relative top-1 cursor-pointer hover:bg-white/15 transition-all duration-300 ease-in-out w-10 flex justify-center items-center h-10 rounded-xl"><i className='bx bx-search'></i></button>
                 <button className="text-2xl text-gray-300 relative top-1 cursor-pointer hover:bg-white/15 transition-all duration-300 ease-in-out w-10 flex justify-center items-center h-10 rounded-xl"><i className='bx bx-bell'></i></button>
                 <Link to={"/login"} className="bg-white/15 hover:bg-white/20 duration-300 transition-all px-5 py-2 rounded-xl cursor-pointer border border-white/30 flex justify-center items-center gap-2"><i className='bx bx-user'></i> Iniciar Sesión</Link>
                 <Link to={"/plans"} className="bg-red-500 hover:bg-red-700 transition-all duration-300 ease-in-out px-5 py-2 rounded-xl cursor-pointer font-semibold">Suscribirte</Link>
             </div>
+
+            <button className="text-2xl flex lg:hidden cursor-pointer">
+                <i className='bxr bx-menu'></i> 
+            </button>
         </header>
     )
 }

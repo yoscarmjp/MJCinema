@@ -3,6 +3,7 @@ import HomePage from "./Pages/HomePage";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Pages/Login";
 import Plans from "./Pages/Plans";
+import Footer from "./Components/Navbar/Footer";
 
 function Logout() {
   localStorage.clear();
@@ -27,7 +28,7 @@ function AppRoutes() {
         </Routes>
       </main>
 
-      {/* {!hideNavbarAndFooter && <Footer />} */}
+      {!hideNavbarAndFooter && <Footer />}
     </div>
   );
 }
