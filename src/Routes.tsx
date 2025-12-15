@@ -1,5 +1,7 @@
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
+import Navbar from "./Components/Navbar/Navbar";
+import Login from "./Pages/Login";
 
 function Logout() {
   localStorage.clear();
@@ -13,12 +15,13 @@ function AppRoutes() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* {!hideNavbarAndFooter && <Navbar />} */}
+      {!hideNavbarAndFooter && <Navbar />}
 
       <main className="flex-1">
         <Routes>
           <Route path="/logout" element={<Logout />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
 
