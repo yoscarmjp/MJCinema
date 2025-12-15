@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
 
 function Logout() {
   localStorage.clear();
@@ -16,10 +17,8 @@ function AppRoutes() {
 
       <main className="flex-1">
         <Routes>
-          {/* <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
-          <Route path="*" element={<NoFound />} /> */}
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
 
