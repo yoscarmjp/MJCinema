@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Pages/Login";
 import Plans from "./Pages/Plans";
 import Footer from "./Components/Navbar/Footer";
+import Movies from "./Pages/Movies";
 
 function Logout() {
   localStorage.clear();
@@ -25,6 +26,7 @@ function AppRoutes() {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/plans" element={<Plans />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </main>
 
