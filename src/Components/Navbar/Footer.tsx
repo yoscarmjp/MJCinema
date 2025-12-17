@@ -25,8 +25,8 @@ function Footer(){
 
                 <div className="flex flex-col gap-2 text-gray-400 font-light">
                     <h1 className="text-white font-semibold">Plataforma</h1>
-                    <Link className="hover:text-white transition-all duration-300" to={"/"}>Película</Link>
-                    <Link className="hover:text-white transition-all duration-300" to={"/"}>Géneros</Link>
+                    <Link className="hover:text-white transition-all duration-300" to={"/movies"}>Película</Link>
+                    <Link className="hover:text-white transition-all duration-300" to={"/genres"}>Géneros</Link>
                     <Link className="hover:text-white transition-all duration-300" to={"/"}>Próximamente</Link>
                     <Link className="hover:text-white transition-all duration-300" to={"/"}>Top 10</Link>
                 </div>

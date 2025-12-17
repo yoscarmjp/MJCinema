@@ -191,7 +191,6 @@ function MoviesList({ selectedGenre }: { selectedGenre: string }) {
           setSelectedGenre(getGenreFromSlug(genreParam));
     }
 
-    // Escuchar cambios en el historial (botón atrás/adelante)
     const handlePopState = () => {
       const params = new URLSearchParams(window.location.search);
       const genreParam = params.get('genero');
