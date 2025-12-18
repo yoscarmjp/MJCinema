@@ -34,7 +34,7 @@ function Footer(){
                 <div className="flex flex-col gap-2 text-gray-400 font-light">
                     <h1 className="text-white font-semibold">Cuenta</h1>
                     <Link className="hover:text-white transition-all duration-300" to={"/"}>Mi Perfil</Link>
-                    <Link className="hover:text-white transition-all duration-300" to={"/"}>Mi Lista</Link>
+                    <Link className="hover:text-white transition-all duration-300" to={"/my-list"}>Mi Lista</Link>
                     <Link className="hover:text-white transition-all duration-300" to={"/"}>Historial</Link>
                     <Link className="hover:text-white transition-all duration-300" to={"/"}>Configuración</Link>
                 </div>
