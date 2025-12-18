@@ -7,6 +7,7 @@ import Footer from "./Components/Navbar/Footer";
 import Movies from "./Pages/Movies";
 import Genre from "./Pages/Genre";
 import MyList from "./Pages/MyList";
+import NoFound from "./Pages/NoFound";
 
 function Logout() {
   localStorage.clear();
@@ -31,6 +32,7 @@ function AppRoutes() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/genres" element={<Genre />} />
           <Route path="/my-list" element={<MyList />} />
+          <Route path="*" element={<NoFound />} />
         </Routes>
       </main>
 
